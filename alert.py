@@ -114,10 +114,9 @@ def run():
             symbol_msgs.append(combined_msg)
 
     if any_signal:
-        full_msg = (
-            f"📊 RSI & MFI đa khung:\n\n{special_alert}"
-            f"{'\n\n-------------------------------------\n\n'.join(symbol_msgs)}"
-        )
+        separator = '\n\n-------------------------------------\n\n'
+        joined_msgs = separator.join(symbol_msgs)
+        full_msg = f"📊 RSI & MFI đa khung:\n\n{special_alert}{joined_msgs}"
         bot.send_message(chat_id=CHAT_ID, text=full_msg)
 
 

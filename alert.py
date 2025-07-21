@@ -5,8 +5,8 @@ import pandas as pd
 import telegram
 
 
-BOT_TOKEN = os.environ.get('TELEGRAM_TOKEN')
-CHAT_ID = os.environ.get('TELEGRAM_CHAT_ID')
+BOT_TOKEN = '7579608947:AAEJh-GaboaHvsFtsYbP6pETS2KVgDWeS2Y'
+CHAT_ID = -4812855571  # hoặc CHAT_ID = '-4812855571'
 
 if not BOT_TOKEN or not CHAT_ID:
     raise ValueError('Missing TELEGRAM_TOKEN or TELEGRAM_CHAT_ID environment variable')
